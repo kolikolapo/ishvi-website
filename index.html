@@ -5,33 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ishvi Beer Garden</title>
     <style>
-        * { box-sizing: border-box; }
         body, html {
             margin: 0;
             padding: 0;
+            width: 100%;
             height: 100%;
-            overflow: hidden;
-            background-color: #000; /* სანამ ვიდეო ჩაიტვირთება, ფონი იყოს შავი */
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: sans-serif;
         }
-        #bg-video {
+        video {
             position: fixed;
             right: 0;
             bottom: 0;
             min-width: 100%;
             min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -1; /* ვიდეო იყოს ყველაფრის უკან */
-            object-fit: cover; /* ვიდეო შეივსოს მთელ ეკრანზე */
+            object-fit: cover;
+            z-index: 1;
+        }
+        .message {
+            z-index: 2; /* ტექსტი რომ ვიდეოს ზემოდან გამოჩნდეს */
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
-
-    <video autoplay muted loop playsinline id="bg-video">
+    <div class="message">საიტი მუშაობს, ვიდეო იტვირთება...</div>
+    <video autoplay muted loop playsinline>
         <source src="bg-video.mp4" type="video/mp4">
-        თქვენს ბრაუზერს არ აქვს ვიდეოს მხარდაჭერა.
     </video>
-
 </body>
 </html>
