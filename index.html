@@ -2,62 +2,71 @@
 <html lang="ka">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ishvi Beer Garden</title>
     <style>
-        /* ყველანაირ ზედმეტ ადგილს ვაშორებთ */
-        * {
-            box-sizing: border-box;
-        }
-
+        * { box-sizing: border-box; }
         body, html {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
-            overflow: hidden; /* სქროლი რომ არ გაჩნდეს */
-            background-color: #000;
+            overflow: hidden;
+            background-color: black;
         }
 
-        /* ვიდეოს კონტეინერი */
-        .video-container {
-            position: absolute;
+        /* ვიდეო ფონი */
+        .bg-video {
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             z-index: 1;
         }
-
         video {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* ეს არის მთავარი - ვიდეო შეივსება ეკრანის ფორმის მიხედვით */
-            object-position: center; /* ვიდეოს ცენტრი ყოველთვის შუაში იქნება */
+            object-fit: cover;
         }
 
-        /* მესიჯის ადგილი (თუ დაგჭირდება) */
-        .message {
+        /* წარწერა ვიდეოს ზემოდან */
+        .content {
             position: relative;
             z-index: 2;
-            color: white;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            top: 50%;
-            transform: translateY(-50%);
-            font-family: sans-serif;
-            pointer-events: none; /* ტექსტმა ხელი არ შეუშალოს ვიდეოს */
+            color: white;
+            font-family: 'Arial', sans-serif; /* შეგიძლია შეცვალო */
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8); /* ტექსტი რომ იკითხებოდეს */
+        }
+        
+        h1 {
+            font-size: 3rem; /* კომპიუტერზე დიდი ზომა */
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* მობილურისთვის ზომების მორგება */
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
         }
     </style>
 </head>
 <body>
 
-    <div class="video-container">
+    <div class="bg-video">
         <video autoplay muted loop playsinline>
             <source src="bg-video.mp4" type="video/mp4">
         </video>
     </div>
 
-    <div class="message"></div>
+    <div class="content">
+        <h1>ISHVI BEER GARDEN<br>COMING SOON</h1>
+    </div>
 
 </body>
 </html>
