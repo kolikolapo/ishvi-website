@@ -5,35 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ishvi Beer Garden</title>
     <style>
-        /* აშორებს ზედმეტ ადგილებს გვერდებზე */
+        * {
+            box-sizing: border-box;
+        }
         body, html {
             margin: 0;
             padding: 0;
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             overflow: hidden;
             background-color: black;
         }
 
-        /* ვიდეოს კონფიგურაცია მთელ ეკრანზე */
-        video {
+        .video-wrapper {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            transform: translate(-50%, -50%);
-            object-fit: cover; /* ეს ბრძანება პასუხისმგებელია მთელ ეკრანზე შევსებაზე */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        video {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover; /* ეს ბრძანება აიძულებს ვიდეოს დაიკავოს მთელი სივრცე */
+            object-position: center center; /* ვიდეო ყოველთვის ცენტრირებული იქნება */
         }
     </style>
 </head>
 <body>
 
-    <video autoplay muted loop playsinline>
-        <source src="bg-video.mp4" type="video/mp4">
-    </video>
+    <div class="video-wrapper">
+        <video autoplay muted loop playsinline>
+            <source src="bg-video.mp4" type="video/mp4">
+        </video>
+    </div>
 
 </body>
 </html>
