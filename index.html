@@ -28,7 +28,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            filter: brightness(0.7);
+            filter: brightness(0.6); /* ოდნავ კიდევ დავაბნელე უკეთესი კონტრასტისთვის */
         }
 
         .content {
@@ -37,30 +37,35 @@
             height: 100%;
             display: flex;
             flex-direction: column;
-            /* ცენტრის ნაცვლად ვიყენებთ flex-end-ს და padding-ს რომ ქვემოთ დავწიოთ */
             justify-content: flex-end; 
             align-items: center;
             text-align: center;
             color: white;
-            padding-bottom: 15vh; /* ეკრანის სიმაღლის 15%-ით ავწევთ ძირიდან */
+            padding-bottom: 10vh; /* ეკრანის ძირიდან სიშორე */
         }
 
         .text-line {
-            /* ყველა წარწერა ერთი ზომის */
-            font-size: 2rem; 
-            font-weight: 700;
+            /* ფონტის ზომა გაორმაგებულია (4rem) */
+            font-size: 4rem; 
+            font-weight: 900; /* მაქსიმალური სისქე */
             text-transform: uppercase;
-            letter-spacing: 3px;
-            margin: 5px 0;
-            /* Drop Shadow ეფექტი */
-            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9), 
-                         0px 0px 15px rgba(0, 0, 0, 0.5);
+            letter-spacing: 5px;
+            margin: 10px 0;
+            /* ექსტრა მკვეთრი ჩრდილი */
+            text-shadow: 
+                0px 4px 10px rgba(0, 0, 0, 1), 
+                0px 10px 30px rgba(0, 0, 0, 1),
+                0px 0px 50px rgba(0, 0, 0, 0.8);
         }
 
-        /* მობილურზე რომ ძალიან დიდი არ იყოს */
+        /* მობილურზე რომ ეკრანს არ გასცდეს */
         @media (max-width: 768px) {
-            .text-line { font-size: 1.3rem; }
-            .content { padding-bottom: 10vh; }
+            .text-line { 
+                font-size: 1.8rem; 
+                letter-spacing: 2px;
+                text-shadow: 0px 4px 15px rgba(0, 0, 0, 1);
+            }
+            .content { padding-bottom: 8vh; }
         }
     </style>
 </head>
