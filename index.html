@@ -2,40 +2,62 @@
 <html lang="ka">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Ishvi Beer Garden</title>
     <style>
+        /* ყველანაირ ზედმეტ ადგილს ვაშორებთ */
+        * {
+            box-sizing: border-box;
+        }
+
         body, html {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
-            background-color: #111;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-family: sans-serif;
+            overflow: hidden; /* სქროლი რომ არ გაჩნდეს */
+            background-color: #000;
         }
-        video {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            object-fit: cover;
+
+        /* ვიდეოს კონტეინერი */
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             z-index: 1;
         }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* ეს არის მთავარი - ვიდეო შეივსება ეკრანის ფორმის მიხედვით */
+            object-position: center; /* ვიდეოს ცენტრი ყოველთვის შუაში იქნება */
+        }
+
+        /* მესიჯის ადგილი (თუ დაგჭირდება) */
         .message {
-            z-index: 2; /* ტექსტი რომ ვიდეოს ზემოდან გამოჩნდეს */
-            font-size: 20px;
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: sans-serif;
+            pointer-events: none; /* ტექსტმა ხელი არ შეუშალოს ვიდეოს */
         }
     </style>
 </head>
 <body>
-    <div class="message"> </div>
-    <video autoplay muted loop playsinline>
-        <source src="bg-video.mp4" type="video/mp4">
-    </video>
+
+    <div class="video-container">
+        <video autoplay muted loop playsinline>
+            <source src="bg-video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="message"></div>
+
 </body>
 </html>
