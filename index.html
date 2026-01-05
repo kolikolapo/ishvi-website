@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishvi Craft Brewery & Beer Garden</title>
+    <title>Ishvi Beer Garden</title>
     <style>
         * { box-sizing: border-box; }
         body, html {
@@ -16,7 +16,6 @@
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
         }
 
-        /* ვიდეო ფონი */
         .bg-video {
             position: fixed;
             top: 0;
@@ -32,27 +31,47 @@
             filter: brightness(0.6);
         }
 
-        /* მთავარი კონტეინერი */
         .main-container {
             position: relative;
             z-index: 2;
             height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* ლოგო ზემოთ, ტექსტი ქვემოთ */
+            justify-content: space-between;
             align-items: center;
             text-align: center;
             color: white;
             padding: 40px 20px 10vh 20px;
         }
 
-        /* ლოგოს სტილი */
         .logo {
-            max-width: 300px; /* ლოგოს მაქსიმალური სიგანე */
+            max-width: 200px;
             height: auto;
+            margin-bottom: 20px;
         }
 
-        /* ტექსტის ბლოკი */
+        /* სოციალური ქსელების სტილი */
+        .social-icons {
+            display: flex;
+            gap: 30px; /* დაშორება ლოგოებს შორის */
+            margin-top: 10px;
+            margin-bottom: auto; /* ეს აიძულებს ლოგოებს ზემოთ აიწიონ, მთავარი ლოგოსკენ */
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            fill: white; /* ლოგოს ფერი */
+            transition: transform 0.3s ease, opacity 0.3s;
+            cursor: pointer;
+            opacity: 0.9;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2); /* მაუსის მიტანისას გადიდდეს */
+            opacity: 1;
+        }
+
         .text-block {
             display: flex;
             flex-direction: column;
@@ -60,28 +79,28 @@
         }
 
         .text-large {
-            font-size: 5rem; /* ISHVI და Coming Soon გაზრდილია */
-            font-weight: 650;
+            font-size: 5rem;
+            font-weight: 900;
             text-transform: uppercase;
             letter-spacing: 5px;
-            margin: 8px 0;
+            margin: 10px 0;
             text-shadow: 0px 4px 15px rgba(0, 0, 0, 1), 0px 10px 40px rgba(0, 0, 0, 1);
         }
 
         .text-medium {
-            font-size: 1.5rem; /* შუა ნაწილი დარჩა იგივე */
-            font-weight: 450;
+            font-size: 1.5rem;
+            font-weight: 400;
             text-transform: uppercase;
             letter-spacing: 3px;
             margin: 5px 0;
-            text-shadow: 0px 4px 15px rgba(0, 0, 0, 1);
+            text-shadow: 0px 4px 10px rgba(0, 0, 0, 1);
         }
 
-        /* მობილურის ვერსია */
         @media (max-width: 768px) {
             .text-large { font-size: 2.2rem; }
             .text-medium { font-size: 1rem; }
             .logo { max-width: 150px; }
+            .social-icon { width: 35px; height: 35px; }
         }
     </style>
 </head>
@@ -94,7 +113,23 @@
     </div>
 
     <div class="main-container">
-        <img src="logo.png" alt="Ishvi Logo" class="logo">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <img src="logo.png" alt="Ishvi Logo" class="logo">
+            
+            <div class="social-icons">
+                <a href="https://www.facebook.com/ishvicraftbrewery/" target="_blank" aria-label="Facebook">
+                    <svg class="social-icon" viewBox="0 0 24 24">
+                        <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.15 5.96C15.21 5.96 16.12 6.04 16.12 6.04V8.51H15.01C13.77 8.51 13.38 9.28 13.38 10.07V12.06H16.15L15.71 14.96H13.38V21.96C18.16 21.21 21.82 17.06 21.82 12.06C21.82 6.53 17.32 2.04 12 2.04Z"/>
+                    </svg>
+                </a>
+
+                <a href="https://www.instagram.com/ishvi_brewery" target="_blank" aria-label="Instagram">
+                    <svg class="social-icon" viewBox="0 0 24 24">
+                        <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
 
         <div class="text-block">
             <div class="text-large">ISHVI</div>
@@ -105,5 +140,3 @@
 
 </body>
 </html>
-
-
