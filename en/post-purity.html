@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1516 - The Beer Purity Law | ISHVI</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="main-header">
+        <div class="container" style="position: relative;">
+            <a href="index.html" class="logo">
+                <img src="../img/logo-en.png" alt="ISHVI Logo"> 
+            </a>
+
+            <nav class="main-nav">
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="beers.html">Beers</a></li>
+                    <li><a href="beer-garden.html">Beer Garden</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="brewery.html">Brewery</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="visit.html" class="btn-contact">Visit Us</a></li>
+                    
+                    <li class="lang-item">
+                        <div class="lang-switcher">
+                            <a href="../post-purity.html">GE</a>
+                            <span class="divider">|</span>
+                            <a href="#" class="active">EN</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="burger-menu" id="burger-btn">
+                <span class="menu-text">MENU</span>
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-header" style="background-image: url('../img/blog-purity.webp'); background-color: #1a2020; background-position: center; background-size: cover; height: 400px; position: relative;">
+        </section>
+
+    <div class="post-title-block">
+        <div class="container text-center">
+            <h1>1516 - Reinheitsgebot - The Beer Purity Law.</h1>
+            <p style="color: var(--primary-color); font-weight: 600;">February 23, 2026</p>
+        </div>
+    </div>
+
+    <section class="section post-content-section">
+        <div class="container post-container">
+            
+            <div class="post-body">
+                <p>At the beginning of the 16th century, a historical turning point occurred in Bavaria. A law was passed that changed the future of beer forever - Reinheitsgebot, the Beer Purity Law.</p>
+                
+                <p>According to the law, beer had to be made using only three ingredients: water, malt, and hops. Everything else was excluded. This rule served one main goal: quality. Consumers had to be certain that what they were drinking was pure, safe, and stable.</p>
+
+                <p>Interestingly, the fourth most important component - yeast - was not mentioned in the original law at all. In that era, microbiology did not yet exist, so fermentation was considered a natural, spontaneous event that happened "by itself." Only centuries later, Louis Pasteur's discoveries proved that yeast is the living organism that transforms the mixture of malt and hops into real beer.</p>
+                
+                <p>The Reinheitsgebot turned brewing from a craft into a strict standard. Producers became obligated to follow rules, improve processes, and treat each batch with responsibility. Beer was no longer an endless field of experiments - it became a controlled culture.</p>
+                
+                <p>Violating the law was strictly punished. If someone brewed beer with forbidden ingredients, the court had the right to confiscate the entire batch from the producer and pour it out without any compensation. This strictness forced producers to pay maximum attention to the cleanliness of the process, which ultimately formed the global reputation of German beer.</p>
+
+                <p>This is where the modern concept of beer quality begins. The Reinheitsgebot is still considered one of the oldest beverage regulations in the world and a symbol that beer can be made with simple ingredients but with the highest responsibility. This law still reminds us that real craft beer starts where there is no compromise on quality.</p>
+
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="blog.html" class="back-link" style="display: inline-block; color: var(--primary-color); font-weight: 600; text-decoration: none; border: 1px solid var(--primary-color); padding: 10px 20px; border-radius: 4px; transition: all 0.3s ease;">
+                    <i class="fas fa-arrow-left"></i> Back to Blogs
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>ISHVI - Craft Brewery & Beer Garden</h3>
+                <p>New Taste. New Beginning!</p>
+            </div>
+            <div class="footer-col">
+                <h3><a href="visit.html" class="footer-title-link">Contact</a></h3>
+                <p>182 Nikoloz Baratashvili Left Bank,<br>Tbilisi, Georgia</p>
+                <p>+995 577 17 17 27</p>
+                <p>info@ishvi.beer</p>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/ishvicraftbrewery" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/ishvi_brewery" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 ISHVI Craft Brewery. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="age-modal">
+        <div class="age-content">
+            <img src="../img/logo-en.png" alt="ISHVI">
+            <h2>Are you 18 or older?</h2>
+            <p>You must be of legal age to browse the site.</p>
+            <div class="age-buttons">
+                <button class="btn-yes" onclick="confirmAge()">Yes</button>
+                <button class="btn-no" onclick="rejectAge()">No</button>
+            </div>
+        </div>
+    </div>
+
+<script>
+    // --- 1. ასაკის შემოწმება ---
+    if (!sessionStorage.getItem('ishviAgeVerified')) {
+        document.getElementById('age-modal').style.display = 'flex';
+        document.body.style.overflow = 'hidden'; 
+    }
+
+    function confirmAge() {
+        sessionStorage.setItem('ishviAgeVerified', 'true');
+        document.getElementById('age-modal').style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+
+    function rejectAge() {
+        window.location.href = "https://www.google.com";
+    }
+
+    // --- 2. ჰედერის შუშის ეფექტი ჩამოსქროლვისას ---
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('.main-header');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // --- 3. პარტნიორების მოდალი (თუ Index-ზე გაქვს ეს ღილაკი) ---
+    function openPartnerModal() {
+        const modal = document.getElementById('partner-modal');
+        if(modal) {
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden'; 
+        }
+    }
+
+    function closePartnerModal() {
+        const modal = document.getElementById('partner-modal');
+        if(modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; 
+        }
+    }
+
+    // --- 4. ბურგერ მენიუს ფუნქციონალი (განახლებული) ---
+    const burgerBtn = document.getElementById('burger-btn');
+    const navMenu = document.getElementById('nav-menu');
+    const burgerIcon = burgerBtn.querySelector('i');
+    const menuText = burgerBtn.querySelector('.menu-text');
+
+    burgerBtn.addEventListener('click', function() {
+        // მენიუს ჩამოშლა/აკეცვა
+        navMenu.classList.toggle('show-menu');
+        
+        // 🌟 აი ეს არის დამატებული ხაზი სქროლის გასაყინად! 🌟
+        document.body.classList.toggle('menu-open');
+        
+        // ხატულის და ტექსტის შეცვლა
+        if (navMenu.classList.contains('show-menu')) {
+            burgerIcon.classList.remove('fa-bars');
+            burgerIcon.classList.add('fa-times'); // X ღილაკი
+            menuText.textContent = 'დახურვა';
+        } else {
+            burgerIcon.classList.remove('fa-times');
+            burgerIcon.classList.add('fa-bars'); // 3 ხაზი
+            menuText.textContent = 'მენიუ';
+        }
+    });
+</script>
+</body>
+</html>

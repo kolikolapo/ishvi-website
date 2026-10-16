@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | ISHVI ∙ Craft Brewery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* ღილაკის სტილიზაცია */
+        .blog-read-btn {
+            display: inline-block;
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+            border: 1px solid var(--primary-color);
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            align-self: flex-start; 
+            margin-top: auto; 
+        }
+        .blog-read-btn:hover {
+            background-color: var(--primary-color);
+            color: #1a2020;
+        }
+    </style>
+</head>
+<body>
+
+<header class="main-header">
+        <div class="container" style="position: relative;">
+            <a href="index.html" class="logo">
+                <img src="../img/logo-en.png" alt="ISHVI Logo"> 
+            </a>
+
+            <nav class="main-nav">
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="beers.html">Beers</a></li>
+                    <li><a href="beer-garden.html">Beer Garden</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="brewery.html">Brewery</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="visit.html" class="btn-contact">Visit Us</a></li>
+                    
+                    <li class="lang-item">
+                        <div class="lang-switcher">
+                            <a href="../blog.html">GE</a>
+                            <span class="divider">|</span>
+                            <a href="#" class="active">EN</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="burger-menu" id="burger-btn">
+                <span class="menu-text">MENU</span>
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-header blog-header">
+        <div class="header-overlay"></div>
+        <div class="container text-center">
+            <h1>The ISHVI Blog</h1>
+            <p>News, interesting insights, and stories</p>
+        </div>
+    </section>
+
+    <section class="section blog-list">
+        <div class="container">
+            <div class="container">
+            <div class="blog-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="history">Beer History</button>
+                <button class="filter-btn" data-filter="types">Beer Types</button>
+            </div>
+            <div class="blog-grid">
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-civilization.webp" alt="Civilization">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">15.01.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>10,000 BC - The accidental discovery that changed everything</h3>
+                        <p>How beer became one of the reasons for the dawn of civilization.</p>
+                        <a href="post-civilization.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-old_china.webp" alt="Old China">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">16.01.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>7,000 BC - Rice beer in ancient China</h3>
+                        <p>Rice beer of ancient China — rituals, mysticism, and a forgotten history.</p>
+                        <a href="post-old_china.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-shumerebi.webp" alt="Sumerians">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">17.01.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>4,000 BC - Sumerians and the birth of beer</h3>
+                        <p>Sumerian beer — energy, nourishment, and a safe alternative to water.</p>
+                        <a href="post-shumerebi.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-god.webp" alt="Gods">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">17.01.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>3rd-4th Millennium BC - Beer and angry gods</h3>
+                        <p>Why spoiled beer signified the displeasure of the gods.</p>
+                        <a href="post-god.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-ninkasi.webp" alt="Ninkasi">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">20.01.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>3,900 BC - Ninkasi, the goddess of beer</h3>
+                        <p>When the knowledge of brewing became sacred — Ninkasi and her secret hymn.</p>
+                        <a href="post-ninkasi.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-africa.webp" alt="Africa">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">21.01.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>3,000 BC Africa - Beer in daily life and rituals</h3>
+                        <p>When beer unites the community — African traditions and spiritual connection.</p>
+                        <a href="post-africa.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-egypt.webp" alt="Egypt">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">22.01.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>Beer in Ancient Egypt</h3>
+                        <p>Around 3,000 BC - Beer is the foundation of life in ancient Egypt.</p>
+                        <a href="post-egypt.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-economics.webp" alt="Economics">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">23.01.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>2,500 BC - Beer as salary</h3>
+                        <p>When workers were paid in beer — the economic system of ancient Egypt.</p>
+                        <a href="post-economics.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-law.webp" alt="Law">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">26.01.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>1,800 BC - The Code of Hammurabi and beer</h3>
+                        <p>How Babylon controlled beer quality by law.</p>
+                        <a href="post-law.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-medicine.webp" alt="Medicine">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">02.02.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>1,500 BC - Beer as medicine</h3>
+                        <p>Why the Egyptians used beer in medicine.</p>
+                        <a href="post-medicine.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-greece.webp" alt="Greece">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">03.02.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>800 BC - Beer in Ancient Greece</h3>
+                        <p>Why Greek warriors drank beer.</p>
+                        <a href="post-greece.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-rome.webp" alt="Rome">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">04.02.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>1st Century - Romans and beer</h3>
+                        <p>How beer spread across Europe through the Roman legions.</p>
+                        <a href="post-rome.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-monastery.webp" alt="Monastery">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">06.02.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>5th Century - Monasteries and the evolution of beer</h3>
+                        <p>How monks turned brewing into a systematic and stable process.</p>
+                        <a href="post-monastery.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-hops.webp" alt="Hops">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">09.02.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>8th Century - Hops change everything!</h3>
+                        <p>How hops transformed beer into a stable and diverse beverage.</p>
+                        <a href="post-hops.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-vikings.webp" alt="Vikings">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">13.02.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>8th – 11th Centuries - The Viking Age</h3>
+                        <p>How beer became a symbol of strength and unity among Vikings.</p>
+                        <a href="post-vikings.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-valhalla.webp" alt="Valhalla">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">16.02.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>Norse mythology and Vikings</h3>
+                        <p>Why beer was a sacred drink and a source of strength for Vikings.</p>
+                        <a href="post-valhalla.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-bread.webp" alt="Bread">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">20.02.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>11th Century - Beer during fasting</h3>
+                        <p>Why monks drank beer every day, even during fasting periods.</p>
+                        <a href="post-bread.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-purity.webp" alt="Purity">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">23.02.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>1516 - Reinheitsgebot - The Beer Purity Law</h3>
+                        <p>Why the beer purity law became a global standard.</p>
+                        <a href="post-purity.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-woman.webp" alt="Woman">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">27.02.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>Brewing in the Middle Ages was women's work</h3>
+                        <p>Why women were the first brewers and entrepreneurs in history.</p>
+                        <a href="post-woman.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-city.webp" alt="City">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">02.03.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>17th Century - Beer in the heart of cities</h3>
+                        <p>How taverns turned beer into a unifier of ideas and people.</p>
+                        <a href="post-city.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-science.webp" alt="Science">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">06.03.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>18th Century - Science in beer</h3>
+                        <p>How brewing became a measurable and precise scientific process.</p>
+                        <a href="post-science.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-georgia.webp" alt="Georgia">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">09.03.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>The Georgian Highlands - Beer and Tradition</h3>
+                        <p>Khevsuretian and Tushetian beer — tradition, order, and community.</p>
+                        <a href="post-georgia.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-lager.webp" alt="Lager">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">13.03.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>19th Century - The birth of Lager</h3>
+                        <p>How Lager was born in Germany and became a worldwide standard.</p>
+                        <a href="post-lager.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-japan.webp" alt="Japan">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">16.03.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>The beginnings of beer in Japan - The Meiji Era (1868–1912)</h3>
+                        <p>How beer transformed Japan's traditional beverage culture.</p>
+                        <a href="post-japan.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-pilsner.webp" alt="Pilsner">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">23.03.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>1842 - The Pilsner Revolution!</h3>
+                        <p>How Pilsner changed the global standard of beer.</p>
+                        <a href="post-pilsner.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-industry.webp" alt="Industry">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">27.03.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>20th Century - Mass production</h3>
+                        <p>How industrialization completely changed the quality of beer.</p>
+                        <a href="post-industry.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-ipa.webp" alt="IPA">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">30.03.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>1980s - The return of IPA</h3>
+                        <p>How IPA made a comeback and shifted modern beer culture.</p>
+                        <a href="post-ipa.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-craft.webp" alt="Craft">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">03.04.2026 <span class="blog-category-tag">Beer History</span></span>
+                        <h3>The Global Craft Boom</h3>
+                        <p>How the worldwide craft beer boom started in the 2000s.</p>
+                        <a href="post-craft.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="history">
+                    <div class="blog-img-wrapper">
+                        <img src="../img/blog-neipa.webp" alt="NEIPA">
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="blog-date">07.04.2026 <span class="blog-category-tag">Beer History</span></span> 
+                        <h3>2010s - The NEIPA artistic revolution</h3>
+                        <p>How NEIPA became the modern crown of craft beer.</p>
+                        <a href="post-neipa.html" class="blog-read-btn">Read More →</a>
+                    </div>
+                </article>  
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>ISHVI - Craft Brewery & Beer Garden</h3>
+                <p>New Taste. New Beginning!</p>
+            </div>
+            <div class="footer-col">
+                <h3><a href="visit.html" class="footer-title-link">Contact</a></h3>
+                <p>Nikoloz Baratashvili Left Bank 182,<br>Tbilisi, Georgia</p>
+                <p>+995 577 17 17 27</p>
+                <p>info@ishvi.beer</p>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/ishvicraftbrewery" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/ishvi_brewery" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 ISHVI Craft Brewery. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="age-modal">
+        <div class="age-content">
+            <img src="../img/logo-en.png" alt="ISHVI">
+            <h2>Are you 18 or older?</h2>
+            <p>You must be of legal drinking age to view this site.</p>
+            <div class="age-buttons">
+                <button class="btn-yes" onclick="confirmAge()">Yes</button>
+                <button class="btn-no" onclick="rejectAge()">No</button>
+            </div>
+        </div>
+    </div>
+
+<script>
+    // --- 1. ასაკის შემოწმება ---
+    if (!sessionStorage.getItem('ishviAgeVerified')) {
+        document.getElementById('age-modal').style.display = 'flex';
+        document.body.style.overflow = 'hidden'; 
+    }
+
+    function confirmAge() {
+        sessionStorage.setItem('ishviAgeVerified', 'true');
+        document.getElementById('age-modal').style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+
+    function rejectAge() {
+        window.location.href = "https://www.google.com";
+    }
+
+    // --- 2. ჰედერის შუშის ეფექტი ჩამოსქროლვისას ---
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('.main-header');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // --- 3. პარტნიორების მოდალი (თუ Index-ზე გაქვს ეს ღილაკი) ---
+    function openPartnerModal() {
+        const modal = document.getElementById('partner-modal');
+        if(modal) {
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden'; 
+        }
+    }
+
+    function closePartnerModal() {
+        const modal = document.getElementById('partner-modal');
+        if(modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; 
+        }
+    }
+
+    // --- 4. ბურგერ მენიუს ფუნქციონალი (განახლებული) ---
+    const burgerBtn = document.getElementById('burger-btn');
+    const navMenu = document.getElementById('nav-menu');
+    const burgerIcon = burgerBtn.querySelector('i');
+    const menuText = burgerBtn.querySelector('.menu-text');
+
+    burgerBtn.addEventListener('click', function() {
+        // მენიუს ჩამოშლა/აკეცვა
+        navMenu.classList.toggle('show-menu');
+        
+        // 🌟 აი ეს არის დამატებული ხაზი სქროლის გასაყინად! 🌟
+        document.body.classList.toggle('menu-open');
+        
+        // ხატულის და ტექსტის შეცვლა
+        if (navMenu.classList.contains('show-menu')) {
+            burgerIcon.classList.remove('fa-bars');
+            burgerIcon.classList.add('fa-times'); // X ღილაკი
+            menuText.textContent = 'დახურვა';
+        } else {
+            burgerIcon.classList.remove('fa-times');
+            burgerIcon.classList.add('fa-bars'); // 3 ხაზი
+            menuText.textContent = 'მენიუ';
+        }
+    });
+</script>
+
+</body>
+</html>

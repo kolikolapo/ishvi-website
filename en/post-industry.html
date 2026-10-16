@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20th Century - Mass Production | ISHVI</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="main-header">
+        <div class="container" style="position: relative;">
+            <a href="index.html" class="logo">
+                <img src="../img/logo-en.png" alt="ISHVI Logo"> 
+            </a>
+
+            <nav class="main-nav">
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="beers.html">Beers</a></li>
+                    <li><a href="beer-garden.html">Beer Garden</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="brewery.html">Brewery</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="visit.html" class="btn-contact">Visit Us</a></li>
+                    
+                    <li class="lang-item">
+                        <div class="lang-switcher">
+                            <a href="../post-industry.html">GE</a>
+                            <span class="divider">|</span>
+                            <a href="#" class="active">EN</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="burger-menu" id="burger-btn">
+                <span class="menu-text">MENU</span>
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-header" style="background-image: url('../img/blog-industry.webp'); background-color: #1a2020; background-position: center; background-size: cover; height: 400px; position: relative;">
+        </section>
+
+    <div class="post-title-block">
+        <div class="container text-center">
+            <h1>20th Century - Mass Production.</h1>
+            <p style="color: var(--primary-color); font-weight: 600;">March 27, 2026</p>
+        </div>
+    </div>
+
+    <section class="section post-content-section">
+        <div class="container post-container">
+            
+            <div class="post-body">
+                <p>At the end of the 20th century, beer moved into one of its most problematic stages. Industrialization and the rapid development of technology turned beer into a mass product - cheap, fast, and identical everywhere.</p>
+                
+                <p>At first glance, this looked like progress. Beer became a global product that tasted the same in different corners of the world. But in reality, this process led to very grave results:</p>
+
+                <h3 style="color: var(--text-white)">• Quality took a backseat.</h3>
+                <h3 style="color: var(--text-white)">• Taste became simplified and uniform.</h3>
+                <h3 style="color: var(--text-white)">• Individuality practically disappeared.</h3>
+
+                <p>Mass production demanded stability and low cost - not character and not taste. Beer was made for quantity, not quality. Local recipes, unique styles, and traditions were slowly lost.</p>
+                
+                <p>It was during this period that the market was flooded with low-quality, soulless beer - beer that no longer had a history, had lost its roots, its individual character, and the brewer's living touch. It became just a cold, heartless industrial product. This was the time when beer became a simple consumer commodity rather than an experience.</p>
+                
+                <p>Most importantly, this problem is not just history from the 20th century. Mass-produced, low-quality beer still widely exists in the market today - with the same logic, the same approach: more quantity, less taste.</p>
+
+                <p>But it was against this background that resistance emerged: breweries and people who decided to return to quality, craftsmanship, and true taste. Today, genuine craft breweries serve to correct these industrial mistakes. This movement tells us that beer should be local, should have its own story and the brewer's signature. In our era, where mass products still dominate, true craft breweries remain a sanctuary for those for whom quality and a flavorful adventure are particularly important.</p>
+
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="blog.html" class="back-link" style="display: inline-block; color: var(--primary-color); font-weight: 600; text-decoration: none; border: 1px solid var(--primary-color); padding: 10px 20px; border-radius: 4px; transition: all 0.3s ease;">
+                    <i class="fas fa-arrow-left"></i> Back to Blog
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>ISHVI - Craft Brewery & Beer Garden</h3>
+                <p>New Taste. New Beginning!</p>
+            </div>
+            <div class="footer-col">
+                <h3><a href="visit.html" class="footer-title-link">Contact</a></h3>
+                <p>Nikoloz Baratashvili Left Bank 182,<br>Tbilisi, Georgia</p>
+                <p>+995 577 17 17 27</p>
+                <p>info@ishvi.beer</p>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/ishvicraftbrewery" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/ishvi_brewery" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 ISHVI Craft Brewery. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="age-modal">
+        <div class="age-content">
+            <img src="../img/logo-en.png" alt="ISHVI">
+            <h2>Are you 18 or older?</h2>
+            <p>You must be of legal drinking age to view this site.</p>
+            <div class="age-buttons">
+                <button class="btn-yes" onclick="confirmAge()">Yes</button>
+                <button class="btn-no" onclick="rejectAge()">No</button>
+            </div>
+        </div>
+    </div>
+
+<script>
+    // --- 1. ასაკის შემოწმება ---
+    if (!sessionStorage.getItem('ishviAgeVerified')) {
+        document.getElementById('age-modal').style.display = 'flex';
+        document.body.style.overflow = 'hidden'; 
+    }
+
+    function confirmAge() {
+        sessionStorage.setItem('ishviAgeVerified', 'true');
+        document.getElementById('age-modal').style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+
+    function rejectAge() {
+        window.location.href = "https://www.google.com";
+    }
+
+    // --- 2. ჰედერის შუშის ეფექტი ჩამოსქროლვისას ---
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('.main-header');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // --- 3. პარტნიორების მოდალი (თუ Index-ზე გაქვს ეს ღილაკი) ---
+    function openPartnerModal() {
+        const modal = document.getElementById('partner-modal');
+        if(modal) {
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden'; 
+        }
+    }
+
+    function closePartnerModal() {
+        const modal = document.getElementById('partner-modal');
+        if(modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; 
+        }
+    }
+
+    // --- 4. ბურგერ მენიუს ფუნქციონალი (განახლებული) ---
+    const burgerBtn = document.getElementById('burger-btn');
+    const navMenu = document.getElementById('nav-menu');
+    const burgerIcon = burgerBtn.querySelector('i');
+    const menuText = burgerBtn.querySelector('.menu-text');
+
+    burgerBtn.addEventListener('click', function() {
+        // მენიუს ჩამოშლა/აკეცვა
+        navMenu.classList.toggle('show-menu');
+        
+        // 🌟 აი ეს არის დამატებული ხაზი სქროლის გასაყინად! 🌟
+        document.body.classList.toggle('menu-open');
+        
+        // ხატულის და ტექსტის შეცვლა
+        if (navMenu.classList.contains('show-menu')) {
+            burgerIcon.classList.remove('fa-bars');
+            burgerIcon.classList.add('fa-times'); // X ღილაკი
+            menuText.textContent = 'დახურვა';
+        } else {
+            burgerIcon.classList.remove('fa-times');
+            burgerIcon.classList.add('fa-bars'); // 3 ხაზი
+            menuText.textContent = 'მენიუ';
+        }
+    });
+</script>
+</body>
+</html>
